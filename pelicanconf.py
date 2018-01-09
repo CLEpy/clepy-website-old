@@ -3,11 +3,14 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'CLEpy'
-SITENAME = 'CLEpy.org'
-SITEURL = ''
-THEME = 'themes/bootstrap'
+SITENAME = 'CLEpy'
+SITESUBTITLE = 'The Cleveland Python User Group'
+SITEURL = 'https://clepy.org/'
+SITELOGO = 'img/clepy-logo.jpg'
+THEME = 'themes/Flex'
 
 PATH = 'content'
+STATIC_PATHS = ['img']
 
 TIMEZONE = 'America/New_York'
 
@@ -21,14 +24,13 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (
+        )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+        ('github', 'https://github.com/CLEpy'),
+        )
 
 DEFAULT_PAGINATION = 10
 
