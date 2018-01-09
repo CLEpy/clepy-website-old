@@ -1,3 +1,4 @@
+*.pid
 output/
 
 # Byte-compiled / optimized / DLL files
