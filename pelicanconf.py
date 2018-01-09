@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'CLEpy'
 SITENAME = 'CLEpy.org'
 SITEURL = ''
-THEME = 'bootstrap'
+THEME = 'themes/bootstrap'
 
 PATH = 'content'
 
