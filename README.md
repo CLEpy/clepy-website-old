@@ -1,4 +1,5 @@
 # clepy-website
+
 Source for the clepy.org website
 
 ## Getting Started
@@ -17,6 +18,8 @@ Install the requirements (it's recommended you use a [virtualenv](http://docs.py
 pip install requirements.in
 ```
 
+Navigate to the local site at [http://localhost:8000](http://localhost:8000)
+
 Run the site locally
 
 ```sh
@@ -29,8 +32,6 @@ Fork the repo and submit a pull request.
 
 Some key notes on forks and pull requests:
 
-[Creating a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)
-
-[Setting up origin on a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
-
-[Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
+* [Creating a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)
+* [Setting up origin on a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+* [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
