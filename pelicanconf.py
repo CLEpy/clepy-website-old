@@ -6,7 +6,7 @@ AUTHOR = 'CLEpy'
 SITENAME = 'CLEpy'
 SITESUBTITLE = 'The Cleveland Python User Group'
 SITEURL = 'http://clepy.org'
-SITELOGO = 'img/clepy-logo.jpg'
+SITELOGO = 'http://clepy.org/img/clepy-logo.jpg'
 THEME = 'themes/Flex'
 
 PATH = 'content'
