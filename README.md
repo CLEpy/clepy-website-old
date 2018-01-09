@@ -2,29 +2,31 @@
 
 Source for the clepy.org website
 
+The site is built using [pelican](http://docs.getpelican.com/en/stable/) (a 
+static site generator) on Python 3.
+
 ## Getting Started
 
-clepy.org is built on [pelican](http://docs.getpelican.com/en/stable/) on Python 3.x
-
-Check out the repo, and pull the submodules
-
-```sh
-git submodule update --init --recursive
-```
-
-Install the requirements (it's recommended you use a [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/))
+* Fork this repo
+* Clone your fork
+* Install the requirements (it's recommended you use a [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/))
 
 ```sh
 pip install requirements.in
 ```
+* Generate the website output
 
-Navigate to the local site at [http://localhost:8000](http://localhost:8000)
+```sh
+pelican content
+```
 
-Run the site locally
+* Run the development server
 
 ```sh
 ./develop_server.sh start
 ```
+
+* Navigate to the local site at [http://localhost:8000](http://localhost:8000)
 
 ## Contributing
 
