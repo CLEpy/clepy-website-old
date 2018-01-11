@@ -1,5 +1,7 @@
-Title: About CLEpy
+Title: CLEpy
 Date: 2018-01-08 20:21
+URL:
+save_as: index.html
 
 CLEpy is the home of the Cleveland Python community and a montly meetup:
 

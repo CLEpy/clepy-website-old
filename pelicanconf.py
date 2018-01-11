@@ -11,7 +11,7 @@ THEME = 'themes/Flex'
 
 PATH = 'content'
 STATIC_PATHS = ['img']
-
+INDEX_SAVE_AS = 'posts/index.html'
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
@@ -23,8 +23,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
 LINKS = (
+        ('posts', '/posts'),
         )
 
 # Social widget
@@ -35,4 +35,4 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
