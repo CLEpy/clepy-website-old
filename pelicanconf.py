@@ -5,8 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = 'CLEpy'
 SITENAME = 'CLEpy'
 SITESUBTITLE = 'The Cleveland Python User Group'
-SITEURL = 'http://clepy.org'
-SITELOGO = 'http://clepy.org/img/clepy-logo.jpg'
+SITEURL = 'https://www.clepy.org'
+SITELOGO = 'https://www.clepy.org/img/clepy-logo.jpg'
 THEME = 'themes/Flex'
 
 PATH = 'content'
