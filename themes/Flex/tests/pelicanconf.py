@@ -40,10 +40,10 @@ MAIN_MENU = True
 
 LINKS = (('Portfolio', '//alexandrevicenzi.com'),)
 
-SOCIAL = (('linkedin', 'https://br.linkedin.com/in/test'),
-          ('github', 'https://github.com/test'),
-          ('google', 'https://google.com/+Test'),
-          ('rss', '//www.example.com/feeds/all.atom.xml'))
+SOCIAL = (('meetup', 'https://www.meetup.com/Cleveland-Area-Python-Interest-Group/'),
+          ('twitter', 'https://twitter.com/clepy'),
+          ('github', 'https://github.com/CLEpy'))
+      
 
 MENUITEMS = (('Archives', '/archives.html'),
              ('Categories', '/categories.html'),
