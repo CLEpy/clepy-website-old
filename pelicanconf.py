@@ -32,6 +32,7 @@ AUTHOR_FEED_RSS = None
 
 LINKS = (
         ('posts', '/posts'),
+        ('submit talk', 'https://www.papercall.io/clepy'),
         )
 
 # Social widget
