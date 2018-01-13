@@ -5,14 +5,20 @@
 #    pip-compile --output-file requirements.txt requirements.in
 #
 blinker==1.4              # via pelican
+certifi==2017.11.5        # via requests
+chardet==3.0.4            # via requests
 docutils==0.14            # via pelican
 feedgenerator==1.9        # via pelican
+idna==2.6                 # via requests
 jinja2==2.10              # via pelican
 markdown==2.6.11
-MarkupSafe==1.0           # via jinja2
+markupsafe==1.0           # via jinja2
+pelican-meetup-info==0.0.2
 pelican==3.7.1
 pygments==2.2.0           # via pelican
 python-dateutil==2.6.1    # via pelican
 pytz==2017.3              # via feedgenerator, pelican
+requests==2.18.4          # via pelican-meetup-info
 six==1.11.0               # via feedgenerator, pelican, python-dateutil
 unidecode==1.0.22         # via pelican
+urllib3==1.22             # via requests

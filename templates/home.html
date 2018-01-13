@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %} &ndash; {{ page.title }}{% endblock %}
+
+{% block content %}
+<article class="single">
+  <header>
+    {% import 'partial/translations.html' as translations with context %}
+    {{ translations.translations_for(page) }}
+    <h1 id="{{ page.slug }}">{{ page.title }}</h1>
+  </header>
+  <div>
+    {% block before_content %}{% endblock %}
+    {% block page_content %}{{ page.content }}{% endblock %}
+    {% if page.meetup_group %}
+    <h2>Meetup Info</h2>
+    <h3><a href="{{ page.meetup_group.link }}">{{ page.meetup_group.name }}</a></h3>
+    {{ page.meetup_group.description }}
+    {% endif %}
+    {% if page.meetup_events %}
+    <h2>Upcoming Meetups</h2>
+    <ul>
+        {% for meetup_event in page.meetup_events[:3] %}
+        <li>
+            <h3><a href="{{ meetup_event.link }}">{{ meetup_event.name }}</a></h3>
+            <p>{{ meetup_event.local_date }} at {{ meetup_event.local_time }}</p>
+            <p>{{ meetup_event.description }}</p>
+            <p>At {{ meetup_event.venue.name }} - {{ meetup_event.venue.address_1 }}, {{ meetup_event.venue.city }}, {{ meetup_event.venue.state }} {{meetup_event.venue.zip }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% block after_content %}{% endblock %}
+  </div>
+</article>
+{% endblock %}
