@@ -38,6 +38,7 @@ LINKS = (
 # Social widget
 SOCIAL = (
         ('github', 'https://github.com/CLEpy'),
+        ('twitter', 'https://twitter.com/CLEpy'),
         )
 
 DEFAULT_PAGINATION = 10
