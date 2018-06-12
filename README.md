@@ -12,7 +12,7 @@ static site generator) on Python 3.
 * Install the requirements (it's recommended you use a [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/))
 
 ```sh
-pip install -r requirements.in
+pip install -r requirements.txt
 ```
 * Generate the website output
 
