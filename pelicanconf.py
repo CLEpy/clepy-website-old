@@ -18,7 +18,7 @@ PLUGINS = ['pelican_meetup_info']
 #MEETUP_API_KEY = ''
 #MEETUP_URLNAME = 'Cleveland-Area-Python-Interest-Group'
 MEETUP_GROUP_SIGNED_URL = 'https://api.meetup.com/Cleveland-Area-Python-Interest-Group?photo-host=public&sig_id=1445&sig=3c0d385c607d27a7bd3ae14f220f17856eb163b0'
-MEETUP_EVENTS_SIGNED_URL = 'https://api.meetup.com/Cleveland-Area-Python-Interest-Group/events?photo-host=public&page=20&sig_id=1445&sig=3dcd3aa3bfacf17cb45302a722ced9727e99cd08'
+MEETUP_EVENTS_SIGNED_URL = 'https://api.meetup.com/Cleveland-Area-Python-Interest-Group/events?photo-host=public&page=20&sig_id=1445&fields=featured_photo&sig=a5c31e40242fc10b7563c440d840c58c1958e95b'
 EXTRA_TEMPLATES_PATHS = ['templates']
 
 DEFAULT_LANG = 'en'
