@@ -9,6 +9,7 @@ SITESUBTITLE = 'The Cleveland Python User Group'
 SITEURL = 'https://www.clepy.org'
 SITELOGO = 'https://www.clepy.org/img/clepy-logo.jpg'
 THEME = 'themes/Flex'
+FAVICON = '/img/clepy-logo.jpg'
 
 PATH = 'content'
 STATIC_PATHS = ['img']
