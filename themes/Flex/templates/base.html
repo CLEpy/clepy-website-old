@@ -96,7 +96,7 @@
         <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% endif %}
       </a>
-      <h1><a href="{{ SITEURL }}">{{ SITETITLE }}</a></h1>
+      <h1><a href="{{ SITEURL }}" aria-label="{{ SITETITLE }}">{{ SITETITLE }}</a></h1>
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
 
@@ -107,11 +107,11 @@
               {% set PAGES_SORT_ATTRIBUTE = 'title' %}
           {%- endif %}
           {% for page in pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
-          <li><a href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}">{{ page.title }}</a></li>
+          <li><a href="{{ SITEURL }}/{{ page.url }}{% if not DISABLE_URL_HASH %}#{{ page.slug }}{% endif %}" aria-label="{{ page.title }}">{{ page.title }}</a></li>
           {% endfor %}
 
           {% for name, link in LINKS %}
-          <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+          <li><a href="{{ link }}" aria-label="{{ name }}" target="_blank">{{ name }}</a></li>
           {% endfor %}
         </ul>
       </nav>
@@ -119,7 +119,7 @@
 
       <ul class="social">
         {% for name, link in SOCIAL %}
-        <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
+        <li><a class="sc-{{ name }}" href="{{ link }}" aria-label="{{ name }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
         {% endfor %}
       </ul>
     </div>
@@ -148,18 +148,18 @@
 
     {% if MAIN_MENU %}
     <nav>
-      <a href="{{ SITEURL }}">{{ _('Home') }}</a>
+      <a href="{{ SITEURL }}" aria-label="Home page">{{ _('Home') }}</a>
 
       {% for title, link in MENUITEMS %}
-      <a href="{{ link }}">{{ title }}</a>
+      <a href="{{ link }}" aria-label="{{ title }}">{{ title }}</a>
       {% endfor %}
 
       {% if FEED_ALL_ATOM %}
-      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">{{ _('Atom') }}</a>
+      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" aria-label="Atom feed">{{ _('Atom') }}</a>
       {% endif %}
 
       {% if FEED_ALL_RSS %}
-      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">{{ _('RSS') }}</a>
+      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" aria-label="RSS feed">{{ _('RSS') }}</a>
       {% endif %}
     </nav>
     {% endif %}
