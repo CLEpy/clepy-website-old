@@ -4,10 +4,12 @@ from __future__ import unicode_literals
 
 AUTHOR = 'CLEpy'
 SITENAME = 'CLEpy'
+SITETITLE = 'CLEpy'
 SITESUBTITLE = 'The Cleveland Python User Group'
 SITEURL = 'https://www.clepy.org'
 SITELOGO = 'https://www.clepy.org/img/clepy-logo.jpg'
 THEME = 'themes/Flex'
+FAVICON = SITEURL + '/img/favicon.ico'
 
 PATH = 'content'
 STATIC_PATHS = ['img']

@@ -89,14 +89,13 @@
   {% endif %}
   <aside>
     <div>
-      <a href="{{ SITEURL }}">
+      <a href="{{ SITEURL }}" aria-label="{{ SITETITLE }}">
         {% if SITELOGO %}
         <img src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% else %}
         <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% endif %}
       </a>
-      <h1><a href="{{ SITEURL }}">{{ SITETITLE }}</a></h1>
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
 
@@ -119,7 +118,7 @@
 
       <ul class="social">
         {% for name, link in SOCIAL %}
-        <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
+        <li><a class="sc-{{ name }}" href="{{ link }}" aria-label="{{ name }}" target="_blank"><i class="fa fa-{{ name }}" aria-hidden="true"></i></a></li>
         {% endfor %}
       </ul>
     </div>
@@ -155,11 +154,11 @@
       {% endfor %}
 
       {% if FEED_ALL_ATOM %}
-      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">{{ _('Atom') }}</a>
+      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" aria-label="Atom feed">{{ _('Atom') }}</a>
       {% endif %}
 
       {% if FEED_ALL_RSS %}
-      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">{{ _('RSS') }}</a>
+      <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" aria-label="RSS feed">{{ _('RSS') }}</a>
       {% endif %}
     </nav>
     {% endif %}
