@@ -33,7 +33,6 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 LINKS = (
-        ('mailing list', 'https://tinyletter.com/clepy'),
         ('posts', '/posts'),
         ('submit talk', 'https://www.papercall.io/clepy'),
         )
