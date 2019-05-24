@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import datetime
 
 AUTHOR = 'CLEpy'
 SITENAME = 'CLEpy'
@@ -10,6 +11,8 @@ SITEURL = 'https://www.clepy.org'
 SITELOGO = 'https://www.clepy.org/img/clepy-logo.jpg'
 THEME = 'themes/Flex'
 FAVICON = SITEURL + '/img/favicon.ico'
+COPYRIGHT_NAME = AUTHOR
+COPYRIGHT_YEAR = datetime.now().strftime('%Y')
 
 PATH = 'content'
 STATIC_PATHS = ['img']
